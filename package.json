@@ -1,0 +1,22 @@
+{
+  "name": "startstopinterval",
+  "version": "1.0.0",
+  "description": "Start stop function using setInterval and clearInterval",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinayakkankanwadi/startStopInterval.git"
+  },
+  "keywords": [
+    "setInterval",
+    "clearInterval"
+  ],
+  "author": "Vinayak Kankanwadi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinayakkankanwadi/startStopInterval/issues"
+  },
+  "homepage": "https://github.com/vinayakkankanwadi/startStopInterval#readme"
+}

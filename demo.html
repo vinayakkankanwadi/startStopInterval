@@ -1,0 +1,29 @@
+<p id="demo"></p>
+
+<button onclick="startStopInterval(true,fn)">Start time</button>
+<button onclick="startStopInterval(false,fn)">Stop time</button>
+
+<script>
+function fn() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = "Time:"+ d.toLocaleTimeString();
+}
+
+function fn1() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = "time:"+ d.toLocaleTimeString();
+}
+
+
+function startStopInterval(start,fn, interval=1000) {
+ if ( start ) {
+  if (startStopInterval.Id) return
+  startStopInterval.Id = setInterval(fn, interval)
+ }
+ else {
+  clearInterval(startStopInterval.Id)
+  startStopInterval.Id = null
+ }
+}
+
+</script>
