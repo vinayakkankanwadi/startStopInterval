@@ -14,6 +14,11 @@ function startStopInterval(start,fn,interval) {
  }
 }
 
-if (typeof module !== 'undefined') {
-	module.exports = startStopInterval;
+//module.exports ='Please do not do this unless you know'
+//exports ='Please do not do this unless you know'
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+ exports.startStopInterval = startStopInterval;
+}
+else {
+ window.startStopInterval = startStopInterval;
 }
