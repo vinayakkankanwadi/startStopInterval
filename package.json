@@ -1,6 +1,6 @@
 {
   "name": "startstopinterval",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "start stop function using setInterval and clearInterval",
   "main": "startstopinterval.js",
   "scripts": {
