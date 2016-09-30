@@ -3,8 +3,7 @@
   "version": "3.0.0",
   "description": "start stop function using setInterval and clearInterval",
   "main": "startstopinterval.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vinayakkankanwadi/startStopInterval.git"
@@ -18,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/vinayakkankanwadi/startStopInterval/issues"
   },
-  "homepage": "https://github.com/vinayakkankanwadi/startStopInterval#readme"
+  "homepage": "https://github.com/vinayakkankanwadi/startStopInterval#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bump": "^2.4.0",
+    "gulp-git": "^1.11.3"
+  }
 }
