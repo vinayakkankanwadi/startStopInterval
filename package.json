@@ -1,11 +1,9 @@
 {
   "name": "startstopinterval",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "start stop function using setInterval and clearInterval",
   "main": "startstopinterval.js",
-  "scripts": {
-   "default": "node ./node_modules/gulp/bin/gulp.js default"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vinayakkankanwadi/startStopInterval.git"
@@ -23,6 +21,7 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-bump": "^2.4.0",
-    "gulp-git": "^1.11.3"
+    "gulp-git": "^1.11.3",
+    "guppy-pre-commit": "^0.4.0"
   }
 }
