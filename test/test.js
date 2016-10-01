@@ -6,7 +6,7 @@ var assert = require('assert');
 var ssi = require('..');
 
 describe('startStopInterval', function() {
-  it('calls startStopInterval function', function() {
+  it('calls startStopInterval function with interval', function() {
 	var clock = sinon.useFakeTimers();
     var spy = sinon.spy();
     ssi.startStopInterval(true,spy,2);
@@ -17,6 +17,20 @@ describe('startStopInterval', function() {
     assert(spy.calledTwice);
 	ssi.startStopInterval(false); // Stop
 	clock.tick(2);
+    assert(! spy.calledThrice);
+    clock.restore();
+  });
+    it('calls startStopInterval function without interval', function() {
+	var clock = sinon.useFakeTimers();
+    var spy = sinon.spy();
+    ssi.startStopInterval(true,spy);
+	assert(! spy.calledOnce);
+    clock.tick(1000);
+    assert(spy.calledOnce);
+	clock.tick(1000);
+    assert(spy.calledTwice);
+	ssi.startStopInterval(false); // Stop
+	clock.tick(1000);
     assert(! spy.calledThrice);
     clock.restore();
   });

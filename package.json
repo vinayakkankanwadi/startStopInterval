@@ -1,10 +1,11 @@
 {
   "name": "startstopinterval",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "start stop function using setInterval and clearInterval",
   "main": "startstopinterval.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- test -R spec"
   },
   "repository": {
     "type": "git",
@@ -21,14 +22,16 @@
   },
   "homepage": "https://github.com/vinayakkankanwadi/startStopInterval#readme",
   "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-bump": "^2.4.0",
     "gulp-git": "^1.11.3",
     "gulp-mocha": "^3.0.1",
-    "guppy-pre-commit": "^0.4.0"
-  },
-  "devDependencies": {
-    "chai": "^3.5.0",
+    "guppy-pre-commit": "^0.4.0",
+    "gulp-istanbul": "^1.1.1",
+    "istanbul": "^0.4.5",
     "mocha": "^3.1.0",
     "sinon": "^1.17.6"
   }
