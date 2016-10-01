@@ -34,4 +34,19 @@ describe('startStopInterval', function() {
     assert(! spy.calledThrice);
     clock.restore();
   });
+   it('calls startStopInterval function more than once', function() {
+	var clock = sinon.useFakeTimers();
+    var spy = sinon.spy();
+    ssi.startStopInterval(true,spy);
+	ssi.startStopInterval(true,spy); //called twice
+	assert(! spy.calledOnce);
+    clock.tick(1000);
+    assert(spy.calledOnce);
+	clock.tick(1000);
+    assert(spy.calledTwice);
+	ssi.startStopInterval(false); // Stop
+	clock.tick(1000);
+    assert(! spy.calledThrice);
+    clock.restore();
+  });
 });
