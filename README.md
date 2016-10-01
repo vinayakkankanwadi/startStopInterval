@@ -32,7 +32,6 @@ ssi.startStopInterval(false);
 
 ```
 
-
 Example
 ======
 ```javascript
