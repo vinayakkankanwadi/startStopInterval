@@ -27,7 +27,7 @@ ssi.startStopInterval(true,fn,1000);
 ```
 
 ```javascript
-// stop by passing false in startstopinterval.
+// stop by passing false and function in startstopinterval.
 ssi.startStopInterval(false,fn);
 
 ```
