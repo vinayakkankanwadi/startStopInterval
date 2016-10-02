@@ -3,6 +3,7 @@ Publishing a simple package to npm startStop using setInterval and clearInterval
 
 [![Build Status](https://travis-ci.org/vinayakkankanwadi/startStopInterval.svg?branch=master)](https://travis-ci.org/vinayakkankanwadi/startStopInterval)
 [![npm version](https://badge.fury.io/js/startstopinterval.png)](https://badge.fury.io/js/startstopinterval)
+[![Issue Count](https://codeclimate.com/repos/57f0d662762539006c007be9/badges/9188f8cd47a655a05661/issue_count.svg)](https://codeclimate.com/repos/57f0d662762539006c007be9/feed)
 
 Install
 ========
