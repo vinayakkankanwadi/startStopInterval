@@ -28,7 +28,7 @@ ssi.startStopInterval(true,fn,1000);
 
 ```javascript
 // stop by passing false in startstopinterval.
-ssi.startStopInterval(false);
+ssi.startStopInterval(false,fn);
 
 ```
 
@@ -55,7 +55,7 @@ ssi.startStopInterval(true,fn,1000);
 
 sleep(5000).then(() => {
  console.log("stop");
- ssi.startStopInterval(false);
+ ssi.startStopInterval(false,fn);
 });
 ```
 

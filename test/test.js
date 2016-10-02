@@ -15,7 +15,7 @@ describe('startStopInterval', function() {
     assert(spy.calledOnce);
 	clock.tick(2);
     assert(spy.calledTwice);
-	ssi.startStopInterval(false); // Stop
+	ssi.startStopInterval(false,spy); // Stop
 	clock.tick(2);
     assert(! spy.calledThrice);
     clock.restore();
@@ -29,7 +29,7 @@ describe('startStopInterval', function() {
     assert(spy.calledOnce);
 	clock.tick(1000);
     assert(spy.calledTwice);
-	ssi.startStopInterval(false); // Stop
+	ssi.startStopInterval(false,spy); // Stop
 	clock.tick(1000);
     assert(! spy.calledThrice);
     clock.restore();
@@ -44,7 +44,7 @@ describe('startStopInterval', function() {
     assert(spy.calledOnce);
 	clock.tick(1000);
     assert(spy.calledTwice);
-	ssi.startStopInterval(false); // Stop
+	ssi.startStopInterval(false,spy); // Stop
 	clock.tick(1000);
     assert(! spy.calledThrice);
     clock.restore();
