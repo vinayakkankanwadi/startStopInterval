@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- "0.10"
+- "4.4"
 addons:
     code_climate:
         repo_token: 983559e9745cc9de13fffb749d86b2b97416e74bcdb015c767a3d51690968a13
