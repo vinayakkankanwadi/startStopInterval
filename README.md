@@ -129,4 +129,6 @@ npm test
 
 License
 =======
+```
 https://github.com/vinayakkankanwadi/startStopInterval/blob/master/LICENSE
+```
