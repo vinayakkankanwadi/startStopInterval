@@ -4,7 +4,7 @@
 //----------------------------------------------------------------------------- 
 function hashCode(str){
 	var hash = 0;
-    if (str.length == 0) return hash;
+    if (str.length === 0) return hash;
     for (i = 0; i < str.length; i++) {
         char = str.charCodeAt(i);
         hash = ((hash<<5)-hash)+char;
@@ -51,8 +51,8 @@ function startStopInterval(start,fn,interval,fnArguments) {
   }
   else {
 	//startStopInterval.Id = setInterval(fn, interval, fnArguments);
-	var id = setInterval(fn, interval, fnArguments);
-	startStopInterval.map.set(hash, id );
+	var aid = setInterval(fn, interval, fnArguments);
+	startStopInterval.map.set(hash, aid );
   }
   //console.log(startStopInterval.map.get(hash));
  }
