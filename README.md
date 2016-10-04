@@ -17,7 +17,11 @@ Solution
 ========
 It would be nice if one had a function to start and stop a particular function executing at specified intervals.
 Thus the need for "startStopInterval" to make it simple and easy.
-This will not only start and stop one function but multiple functions.
+This is intended to 
+- start and stop a function 
+- start and stop multiple functions
+- pass arguments to function(s)
+- provide interval to function(s)
 
 Install
 ========
