@@ -5,6 +5,7 @@ Publishing a simple package to npm startStop using setInterval and clearInterval
 [![npm version](https://badge.fury.io/js/startstopinterval.png)](https://badge.fury.io/js/startstopinterval)
 [![Issue Count](https://codeclimate.com/repos/57f0d662762539006c007be9/badges/9188f8cd47a655a05661/issue_count.svg)](https://codeclimate.com/repos/57f0d662762539006c007be9/feed)
 [![Test Coverage](https://codeclimate.com/repos/57f0d662762539006c007be9/badges/9188f8cd47a655a05661/coverage.svg)](https://codeclimate.com/repos/57f0d662762539006c007be9/coverage)
+[![Known Vulnerabilities](https://snyk.io/test/github/vinayakkankanwadi/startstopinterval/4b139fc03c5c21f584b62bec9148d49c63b7442e/badge.svg)](https://snyk.io/test/github/vinayakkankanwadi/startstopinterval/4b139fc03c5c21f584b62bec9148d49c63b7442e)
 
 Install
 ========
