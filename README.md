@@ -28,23 +28,20 @@ npm install startstopinterval
 Usage
 ======
 ```javascript
-// Require startstopinterval.
+//Step 1: Require startstopinterval.
 var ssi= require("startstopinterval");
-
 ```
 
 ```javascript
-// start by passing true in startstopinterval.
-// fn here is any function what you would like to start
-// 1000 here is interval
-ssi.startStopInterval(true,fn,1000);
-
+// Step 2: start by passing true in startstopinterval.
+// functionToExecute - any function to call start at specified intervals.
+// 1000              - interval
+ssi.startStopInterval(true,functionToExecute,1000);
 ```
 
 ```javascript
-// stop by passing false and function in startstopinterval.
-ssi.startStopInterval(false,fn);
-
+// Step 3: stop by passing false and functionToExecute in startstopinterval.
+ssi.startStopInterval(false,functionToExecute);
 ```
 
 Example
