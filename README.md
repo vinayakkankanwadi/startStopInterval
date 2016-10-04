@@ -46,10 +46,11 @@ ssi.startStopInterval(false,functionToExecute);
 
 Example
 ======
-```javascript
-// Lazy usage in node.
+```
+//Example 1: Lazy usage in node.
 https://github.com/vinayakkankanwadi/usingstartstopinterval
-
+```
+```javascript
 var ssi= require("startstopinterval");
 
 // sleep time expects milliseconds
@@ -71,10 +72,11 @@ sleep(5000).then(() => {
 });
 ```
 
-```javascript
-// Lazy usage in html.
+```
+//Example 2: Lazy function usage in html.
 https://github.com/vinayakkankanwadi/startStopInterval/blob/master/demo.html
-
+```
+```javascript
 <p id="demo"></p>
 
 <button onclick="startStopInterval(true,fn)">Start time</button>
@@ -88,6 +90,34 @@ function fn() {
 }
 </script>
 
+```
+
+```
+//Example 3: Lazy multiple function usage in html.
+https://github.com/vinayakkankanwadi/startStopInterval/blob/master/demo.html
+```
+```javascript
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<button onclick="startStopInterval(true,fn,1000)">Start time</button>
+<button onclick="startStopInterval(false,fn)">Stop time</button>
+
+<button onclick="startStopInterval(true,fn1,1000,[5,'one'])">Start time</button>
+<button onclick="startStopInterval(false,fn1)">Stop time</button>
+
+
+<script type="text/javascript" src="startstopinterval.js"></script>
+<script>
+function fn() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = "Time:"+ d.toLocaleTimeString();
+}
+function fn1(fnArguments) {
+    var d = new Date();
+    document.getElementById("demo1").innerHTML = fnArguments+"Time:"+ d.toLocaleTimeString();
+}
+</script>
 ```
 
 Tests
