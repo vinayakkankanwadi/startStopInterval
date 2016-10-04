@@ -47,7 +47,7 @@ ssi.startStopInterval(false,functionToExecute);
 Example
 ======
 ```
-//Example 1: Lazy usage in node.
+Example 1: Lazy usage in node.
 https://github.com/vinayakkankanwadi/usingstartstopinterval
 ```
 ```javascript
@@ -73,7 +73,7 @@ sleep(5000).then(() => {
 ```
 
 ```
-//Example 2: Lazy function usage in html.
+Example 2: Lazy function usage in html.
 https://github.com/vinayakkankanwadi/startStopInterval/blob/master/demo.html
 ```
 ```javascript
@@ -93,7 +93,7 @@ function fn() {
 ```
 
 ```
-//Example 3: Lazy multiple function usage in html.
+Example 3: Lazy multiple function usage in html.
 https://github.com/vinayakkankanwadi/startStopInterval/blob/master/demo.html
 ```
 ```javascript
