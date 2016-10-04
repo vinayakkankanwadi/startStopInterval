@@ -9,7 +9,9 @@ Publishing a simple package to npm startStop using setInterval and clearInterval
 
 Install
 ========
-```npm install startstopinterval`
+```
+npm install startstopinterval
+```
 
 Usage
 ======
