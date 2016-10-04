@@ -23,20 +23,14 @@ function startStopInterval(start,fn,interval,fnArguments) {
 //----------------------------------------------------------------------------- 
  if ( startStopInterval.map === undefined ) {
 	startStopInterval.map = new Map();
- //	console.log('map created');
  }
- //else {
- //	console.log('map present'); 
- //}
  
 //-----------------------------------------------------------------------------
 // Hash the function to get an hash id
 //----------------------------------------------------------------------------- 
  var hash = hashCode(''+fn+'');
- //console.log(start,fn,interval,fnArguments,hash,startStopInterval.map);
  
  if ( start ) {
-  //if (startStopInterval.Id) return
   if (startStopInterval.map.has(hash)) return
 
   // Old way before ES6 (EcmaScript)
@@ -45,23 +39,17 @@ function startStopInterval(start,fn,interval,fnArguments) {
   } 	
   
   if (fnArguments === undefined) {
-	//startStopInterval.Id = setInterval(fn, interval);
 	var id = setInterval(fn, interval);
 	startStopInterval.map.set(hash, id );
   }
   else {
-	//startStopInterval.Id = setInterval(fn, interval, fnArguments);
 	var aid = setInterval(fn, interval, fnArguments);
 	startStopInterval.map.set(hash, aid );
   }
-  //console.log(startStopInterval.map.get(hash));
  }
  else {
-  //console.log(startStopInterval.map.get(hash));	 
   clearInterval(startStopInterval.map.get(hash))
-  //console.log(startStopInterval.map.get(hash));
   startStopInterval.map.delete(hash);
-  //console.log(startStopInterval.map.size);
  }
 }
 
