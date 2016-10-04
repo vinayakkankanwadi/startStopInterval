@@ -16,7 +16,7 @@ function hashCode(str){
 //-----------------------------------------------------------------------------
 // startStopInterval function
 //-----------------------------------------------------------------------------
-function startStopInterval(start,fn,interval,arguments) {
+function startStopInterval(start,fn,interval,fnArguments) {
 
 //-----------------------------------------------------------------------------
 // Create a Map if not defined
@@ -33,7 +33,7 @@ function startStopInterval(start,fn,interval,arguments) {
 // Hash the function to get an hash id
 //----------------------------------------------------------------------------- 
  var hash = hashCode(''+fn+'');
- //console.log(start,fn,interval,arguments,hash,startStopInterval.map);
+ //console.log(start,fn,interval,fnArguments,hash,startStopInterval.map);
  
  if ( start ) {
   //if (startStopInterval.Id) return
@@ -44,14 +44,14 @@ function startStopInterval(start,fn,interval,arguments) {
    interval = 1000;
   } 	
   
-  if (arguments === undefined) {
+  if (fnArguments === undefined) {
 	//startStopInterval.Id = setInterval(fn, interval);
 	var id = setInterval(fn, interval);
 	startStopInterval.map.set(hash, id );
   }
   else {
-	//startStopInterval.Id = setInterval(fn, interval, arguments);
-	var id = setInterval(fn, interval, arguments);
+	//startStopInterval.Id = setInterval(fn, interval, fnArguments);
+	var id = setInterval(fn, interval, fnArguments);
 	startStopInterval.map.set(hash, id );
   }
   //console.log(startStopInterval.map.get(hash));
