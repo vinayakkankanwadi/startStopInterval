@@ -49,4 +49,24 @@ describe('startStopInterval', function() {
     assert(! spy.calledThrice);
     clock.restore();
   });
+  it('calls startStopInterval multiple function with interval', function() {
+	var spy1 = sinon.spy(), spy2 = sinon.spy();
+	var clock = sinon.useFakeTimers();
+	ssi.startStopInterval(true,spy1,200);
+	ssi.startStopInterval(true,spy2,500);
+    expect(spy1).to.not.be.called;
+    expect(spy2).to.not.be.called;	
+	clock.tick(500);
+	expect(spy1).to.be.called;
+	expect(spy2).to.be.called;
+    clock.tick(500);
+	expect(spy1).to.be.calledTwice;
+	expect(spy2).to.be.calledTwice;
+    ssi.startStopInterval(false,spy1); // Stop
+	ssi.startStopInterval(false,spy2); // Stop
+	clock.tick(500);
+	expect(spy1).to.not.be.calledThrice;
+	expect(spy2).to.not.be.calledThrice;
+    clock.restore();
+  });
 });
