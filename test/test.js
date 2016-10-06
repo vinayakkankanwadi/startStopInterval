@@ -71,7 +71,7 @@ describe('startStopInterval', function() {
     clock.restore();
   });
   it('calls startStopInterval null function', function() {
-	  var str= '';
-	ssi.startStopInterval(true,str,200);
+	var str= '';
+	assert( undefined == ssi.startStopInterval(true,str,200));
   });
 });
