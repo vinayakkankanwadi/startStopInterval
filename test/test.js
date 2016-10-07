@@ -64,7 +64,7 @@ describe('startStopInterval', function() {
 	expect(spy1).to.be.calledTwice;
 	expect(spy2).to.be.calledTwice;
     ssi.startStopInterval(false,spy1); // Stop
-	ssi.startStopInterval(false,spy2); // Stop
+	ssi.startStopInterval(false,spy2); 
 	clock.tick(500);
 	expect(spy1).to.not.be.calledThrice;
 	expect(spy2).to.not.be.calledThrice;
