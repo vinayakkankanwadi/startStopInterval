@@ -1,6 +1,6 @@
 //-----------------------------------------------------------------------------
 // Java String.hashCode() implementation
-// hasCode to generate hash
+// hasCode used to generate hash
 //----------------------------------------------------------------------------- 
 function hashCode(str){
 	var hash = 0;
