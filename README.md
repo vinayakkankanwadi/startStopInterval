@@ -86,6 +86,7 @@ https://github.com/vinayakkankanwadi/startStopInterval/blob/master/demo.html
 <button onclick="startStopInterval(true,fn)">Start time</button>
 <button onclick="startStopInterval(false,fn)">Stop time</button>
 
+
 <script type="text/javascript" src="startstopinterval.js"></script>
 <script>
 function fn() {
