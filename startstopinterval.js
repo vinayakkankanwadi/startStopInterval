@@ -29,18 +29,21 @@ function startStopInterval(start,fn,interval,fnArguments)
 		startStopInterval.map = new Map();
 	}
  
-//-----------------------------------------------------------------------------
-// Hash the function to get an hash id
-//----------------------------------------------------------------------------- 
- var hash = hashCode(''+fn+'');
+	//-----------------------------------------------------------------------------
+	// Hash the function to get an hash id
+	//----------------------------------------------------------------------------- 
+	var hash = hashCode(''+fn+'');
  
- if ( start ) {
-  if (startStopInterval.map.has(hash)) return
+	if ( start ) 
+	{
+		if (startStopInterval.map.has(hash)) 
+			return
 
-  // Old way before ES6 (EcmaScript)
-  if (interval === undefined) {
-   interval = 1000;
-  } 	
+		// Old way before ES6 (EcmaScript)
+		if (interval === undefined) 
+		{
+			interval = 1000;
+		} 	
   
   if (fnArguments === undefined) {
 	var id = setInterval(fn, interval);
