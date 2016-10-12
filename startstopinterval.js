@@ -45,19 +45,22 @@ function startStopInterval(start,fn,interval,fnArguments)
 			interval = 1000;
 		} 	
   
-  if (fnArguments === undefined) {
-	var id = setInterval(fn, interval);
-	startStopInterval.map.set(hash, id );
-  }
-  else {
-	var aid = setInterval(fn, interval, fnArguments);
-	startStopInterval.map.set(hash, aid );
-  }
- }
- else {
-  clearInterval(startStopInterval.map.get(hash))
-  startStopInterval.map.delete(hash);
- }
+		if (fnArguments === undefined) 
+		{
+			var id = setInterval(fn, interval);
+			startStopInterval.map.set(hash, id );
+		}
+		else 
+		{
+			var aid = setInterval(fn, interval, fnArguments);
+			startStopInterval.map.set(hash, aid );
+		}
+	}
+	else 
+	{
+		clearInterval(startStopInterval.map.get(hash))
+		startStopInterval.map.delete(hash);
+	}
 }
 
 //-----------------------------------------------------------------------------
