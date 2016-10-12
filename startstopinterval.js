@@ -19,14 +19,15 @@ function hashCode(str){
 //-----------------------------------------------------------------------------
 // startStopInterval function
 //-----------------------------------------------------------------------------
-function startStopInterval(start,fn,interval,fnArguments) {
-
-//-----------------------------------------------------------------------------
-// Create a Map if not defined
-//----------------------------------------------------------------------------- 
- if ( startStopInterval.map === undefined ) {
-	startStopInterval.map = new Map();
- }
+function startStopInterval(start,fn,interval,fnArguments) 
+{
+	//-----------------------------------------------------------------------------
+	// Create a Map if not defined
+	//----------------------------------------------------------------------------- 
+	if ( startStopInterval.map === undefined ) 
+	{
+		startStopInterval.map = new Map();
+	}
  
 //-----------------------------------------------------------------------------
 // Hash the function to get an hash id
