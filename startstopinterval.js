@@ -34,6 +34,9 @@ function startStopInterval(start,fn,interval,fnArguments)
 	//----------------------------------------------------------------------------- 
 	var hash = hashCode(''+fn+'');
  
+	//-----------------------------------------------------------------------------
+	// Start the function
+	//----------------------------------------------------------------------------- 
 	if ( start ) 
 	{
 		if (startStopInterval.map.has(hash)) 
@@ -56,6 +59,9 @@ function startStopInterval(start,fn,interval,fnArguments)
 			startStopInterval.map.set(hash, aid );
 		}
 	}
+	//-----------------------------------------------------------------------------
+	// Stop the function
+	//----------------------------------------------------------------------------- 	
 	else 
 	{
 		clearInterval(startStopInterval.map.get(hash))
