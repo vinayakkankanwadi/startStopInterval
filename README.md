@@ -63,8 +63,8 @@ function sleep (time) {
 }
 
 function fn() {
- var d = new Date();
- console.log(d);
+  var d = new Date();
+  console.log(d);
 }
 
 console.log("start")
