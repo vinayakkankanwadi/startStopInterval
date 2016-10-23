@@ -11,7 +11,7 @@ Problem
 ========
 Often one may come across the need of calling a function at specified intervals.
 This is were the native setInterval function comes to use. 
-However at times it could 'get messy' and gets better if you add multiple functions into the mix.
+However at times it could 'get messy' and gets better if you add multiple functions into the mix .
 
 Solution
 ========
