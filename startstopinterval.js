@@ -72,8 +72,8 @@ function startStopInterval(start,fn,interval,fnArguments)
 //-----------------------------------------------------------------------------
 // Node and browser support
 //-----------------------------------------------------------------------------
-//module.exports ='Please do not do this unless you know'
-//exports ='Please do not do this unless you know'
+// module.exports ='Please do not do this unless you know'
+// exports ='Please do not do this unless you know'
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') 
 {
 	exports.startStopInterval = startStopInterval;
