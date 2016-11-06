@@ -15,7 +15,7 @@ describe('startStopInterval', function() {
     assert(spy.calledOnce);
 	clock.tick(2);
     assert(spy.calledTwice);
-	ssi.startStopInterval(false,spy); // Stop
+	ssi.startStopInterval(false,spy); //Stop
 	clock.tick(2);
     assert(! spy.calledThrice);
     clock.restore();
