@@ -26,7 +26,7 @@ This is intended to
 Install
 ========
 ```
-npm install startstopinterval 
+npm install startstopinterval
 ```
 
 Usage
