@@ -43,7 +43,7 @@ var ssi= require("startstopinterval");
 ssi.startStopInterval(true,functionToExecute,1000);
 ```
 
-```javascript
+```javascript 
 // Step 3: stop by passing false and functionToExecute in startstopinterval.
 ssi.startStopInterval(false,functionToExecute);
 ```
