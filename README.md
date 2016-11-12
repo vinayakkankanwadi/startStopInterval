@@ -93,7 +93,6 @@ function fn() {
     document.getElementById("demo").innerHTML = "Time:"+ d.toLocaleTimeString();
 }
 </script>
-
 ```
 
 ```
