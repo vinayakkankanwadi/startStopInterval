@@ -21,7 +21,7 @@ This is intended to
 - start and stop a function 
 - start and stop multiple functions
 - pass arguments to function(s)
-- provide interval to function(s)
+- provide interval to function(s) 
 
 Install
 ========
