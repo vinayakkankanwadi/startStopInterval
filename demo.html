@@ -7,14 +7,13 @@
 <button onclick="startStopInterval(true,fn1,1000,[5,'one'])">Start time</button>
 <button onclick="startStopInterval(false,fn1)">Stop time</button>
 
-
 <script type="text/javascript" src="startstopinterval.js"></script>
 <script>
 function fn() {
 // console.log('fn');
     var d = new Date();
     document.getElementById("demo").innerHTML = "Time:"+ d.toLocaleTimeString();
-}
+} 
     
 function fn1(a) {
 // console.log('fn1',a);
